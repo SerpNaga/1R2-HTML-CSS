@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100wv;
+            height: 100wh;
+            margin: 0;
+            overflow: hidden;
+            padding: 100px 200px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1{
+            color: rgb(21, 21, 98);
+            font: 600 30px sans-serif;
+            text-transform: uppercase;
+        }
+        h1::before{
+            height: 150px;
+            width: 80px;
+            background: palevioletred;
+            display: block;
+            content: "";
+            position: relative;
+            top: 110px;
+            left: -30px;
+            z-index: -1;
+        }
+        .right{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phone<br>Mockup</h1>
+    <div class="right">
+        <h2>App Design for Mobile</h2>
+        <ul>
+            <li>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur vel excepturi.</p>
+            </li>
+            <li>
+                <h3>Non, expedita iste.</h3>
+                <p>Nihil perferendis ad dignissimos ipsam totam sunt reiciendis quisquam eaque quia repellendus.</p>
+            </li>
+            <li>
+                <h3>Tempore, officia dicta?</h3>
+                <p>Molestiae veniam totam asperiores autem eos, nam ipsam eaque provident qui porro.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
