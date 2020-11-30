@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+}
+.item {
+    min-height: 20px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px rgba(9, 14, 9, 0.767);
+    border-radius: 8px;
+}
+.container {
+    background: darkolivegreen;
+    display: grid;
+    grid-template-columns: 100px 570px;
+    grid-template-rows: 50px 580px;
+    padding: 75px calc(50% - 355px);
+    gap: 20px;
+}
+.item1 {
+    background: rosybrown;
+    grid-row-start: 1;
+    grid-row-end: span 2; /*Кол-во строк*/
+}
+.item2 {
+    background: wheat;
+}
+.item3 {
+    background: beige;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>

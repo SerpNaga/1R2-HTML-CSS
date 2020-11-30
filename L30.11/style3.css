@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+.element {
+    background: cadetblue;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-rows: 50px repeat(6, 100px);
+    padding: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "asideLeft nav nav asideRight"
+    "asideLeft main main asideRight"
+    "asideLeft main main asideRight"
+    "asideLeft main main asideRight"
+    "footer footer footer footer"
+}
+.element1 {
+    grid-area: header;
+}
+.element2 {
+    grid-area: nav;
+    background: darkcyan;
+}
+.element3 {
+    grid-area: asideLeft;
+}
+.element4 {
+    grid-area: main;
+    background: lightblue;
+}
+.element5 {
+    grid-area: asideRight;
+}
+.element6 {
+    grid-area: footer;
+    background: darkcyan;
+}
