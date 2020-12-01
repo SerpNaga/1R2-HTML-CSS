@@ -1,0 +1,75 @@
+body{
+    height: 750px; background-color: rgb(233, 233, 233);
+    display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
+    margin: 0; background-image: url("https://i2.wp.com/cushshomegrown.com/wp-content/uploads/2017/09/Cush-New-Background-bottom-01.png?ssl=1"); background-size: 1000px 250px; background-repeat: no-repeat;
+    padding: 50px; background-position: top center;
+}
+.pageBody{
+    height: 550px;width: 1000px; background-color: rgb(255, 239, 196);
+    display: flex; flex-direction: row;
+    text-align: center; border-radius: 8px;
+}
+nav{
+    height: 100%; width: 150px; background-color: beige;
+    display: flex; flex-direction: column; font: 15px sans-serif;
+    background-image: url("https://images.vexels.com/media/users/3/145200/isolated/preview/d65293dd9a3adfacc8c5089362ec2464-woman-walking-dog-illustration-by-vexels.png"); background-size: 150px; background-repeat: no-repeat; background-position: bottom left;
+    border-radius: 8px;
+}
+.navH{
+    height: 80px; 
+    line-height: 80px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    height: 70px;
+    line-height: 70px;
+}
+.mn{
+    height: 100%; width: calc(100% - 150px);
+    padding: 0 30px;
+}
+header{
+    height: 40px; background-color: rgba(245, 245, 245, 0.5); 
+    line-height: 40px;
+    display: flex; flex-direction: row; justify-content: flex-end;
+    border-radius: 8px; padding: 20px 0;
+}
+.headerCard{
+    height: 100%; width: 125px;
+    border-radius: 8px;
+}
+.hc1{
+    background-color: darkcyan;
+}
+main{
+    height: calc(100% - 170px);
+    display: flex; flex-direction: row; justify-content: space-around;
+    padding: 10px 0;
+}
+.longCard{
+    width: calc(100% / 8 * 2 - 30px); background-color: rgb(218, 139, 65);
+    border-radius: 8px;
+}
+.column{
+    width: calc(100% / 8 * 3 - 30px);
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+.card{
+    height: calc(100% / 2 - 10px); background-color: rgb(218, 139, 65);
+    border-radius: 8px;
+}
+footer{
+    height: 70px;
+    line-height: 70px; background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 8px;
+}
+.image{
+    height: 25px; border-radius: 50%;
+}
+a{
+    text-decoration: none; color: inherit;
+}
