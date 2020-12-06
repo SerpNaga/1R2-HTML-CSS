@@ -1,0 +1,38 @@
+.header{
+    height: 150px; background: purple; color: coral;
+    border: 1px solid;
+    font: 75px / 2 sans-serif; text-align: center;
+}
+.menu{
+    height: 100px; background: teal; color: coral;
+    border: 1px solid;
+    font: 50px / 2 sans-serif; text-align: center;
+}
+.yo{
+    height: 200px; background: blue; color: coral;
+    border: 1px solid;
+    font: 100px / 2 sans-serif; text-align: center;
+}
+
+
+.container{
+    height: 100vhs; background: sandybrown; 
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+
+
+.card1{
+    width: calc(100% /3 * 2); background: cyan; color: coral;
+    border: 1px solid;
+    font: 100px / 2 sans-serif; text-align: center;
+}
+.card2{
+    width: calc(100% / 3); background: pink; color: coral;
+    border: 1px solid;
+    font: 100px / 2 sans-serif; text-align: center;
+}
+.main{
+    height: calc(100vh - 450px);
+    background: green; 
+    display: flex; flex-direction: row; justify-content: space-between;
+}

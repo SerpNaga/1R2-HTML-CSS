@@ -7,9 +7,37 @@
     <style>
         body {
             margin: 0;
+            font-size: 0;
+        }
+        h1 {
+            position: absolute;
+            top: -14px;
+            font: small-caps bold 17px / 0.8 sans-serif;
+        }
+        h2 {
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            font: small-caps bold 17px / 0.8 sans-serif;
+        }
+        h3 {
+            position: absolute;
+            top: 2px;
+            left: 20px;
+            font: small-caps bold 17px / 0.8 sans-serif;
+        }
+        h4 {
+            position: absolute;
+            top: -14px;
+            left: 10px;
+            font: small-caps bold 17px / 0.8 sans-serif;
         }
         .element {
             background: white;
+            position: relative;
+        }
+        .el {
+            box-sizing: border-box;
             position: relative;
         }
         .number {
@@ -74,17 +102,18 @@
         .element3 {
             display: flex;
             flex-direction: column;
-            padding: 20px 10px;
+            padding: 15px 10px;
             justify-content: space-around;
         }
         .element3 .el1 {
             background: lightgray;
-            height: 150px;
+            height: 160px;
         }
         .element3 .el2 {
             background: dimgray;
-            height: 70px;
+            height: 60px;
             color: white;
+            padding: 10px 20px;
         }
         .element4 {
             display: grid;
@@ -154,60 +183,78 @@
 <body>
     <div class="container">
         <div class="element element1">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
-            <div class="el4"></div>
+            <div class="el el1">
+                <h1>app development<br>for companies</h1>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
+            <div class="el el4"></div>
             <div class="number"></div>
             <div class="row"></div>
         </div>
         <div class="element element2">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
-            <div class="el3"></div>
-            <div class="el3"></div>
+            <div class="el el1">
+                <h1>some design<br>facts</h1>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
+            <div class="el el3"></div>
+            <div class="el el3"></div>
             <div class="number"></div>
             <div class="row"></div>
         </div>
         <div class="element element3">
-            <div class="el1"></div>
-            <div class="el2"></div>
+            <div class="el el1">
+                <h2>modern<br>design</h2>
+            </div>
+            <div class="el el2">
+                <h2>nors</h2>
+            </div>
             <div class="number"></div>
         </div>
         <div class="element element4">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
-            <div class="el4"></div>
+            <div class="el el1">
+                <h3>new<br>one</h3>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
+            <div class="el el4"></div>
             <div class="number"></div>
             <div class="row"></div>
         </div>
         <div class="element element5">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
+            <div class="el el1">
+                <h4>modern<br>design</h4>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
             <div class="number"></div>
             <div class="row"></div>
         </div>
         <div class="element element6">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
+            <div class="el el1">
+                <h1>clean<br>design</h1>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
             <div class="number"></div>
             <div class="row"></div>
         </div>
         <div class="element element7">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el3"></div>
+            <div class="el el1">
+                <h3>one<br>work</h3>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
             <div class="number"></div>
         </div>
         <div class="element element8">
-            <div class="el1"></div>
-            <div class="el2"></div>
-            <div class="el2"></div>
-            <div class="el2"></div>
+            <div class="el el1">
+                <h3>what we<br>do for you</h3>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el2"></div>
+            <div class="el el2"></div>
             <div class="number"></div>
         </div>
     </div>

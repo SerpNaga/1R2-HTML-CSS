@@ -1,0 +1,28 @@
+header{
+    height: 100px; background: saddlebrown;
+    padding: 0 50px;
+    display: flex;
+    align-items: center; justify-content: space-between;
+    font: 20px sans-serif; color: sandybrown;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none; color: inherit;
+}
+.menu{
+    width: 50%;
+    background: sienna;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase; font-weight: 900;
+}
+.links{
+    display: flex;
+}
+.links li{
+    margin-left: 10px;
+}

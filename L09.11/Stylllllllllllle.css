@@ -1,0 +1,10 @@
+.card{
+    width: 100px; /*height: 250;*/ background: teal; color: coral;
+    border: 1px solid; border-radius: 8px;
+    font: 100px / 2 sans-serif; text-align: center;
+}
+.container{
+    height: 500px; background: sandybrown; 
+    display: flex; flex-direction: row; justify-content: space-around; 
+    align-items: flex-start;
+}

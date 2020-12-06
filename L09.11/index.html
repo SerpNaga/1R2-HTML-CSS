@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrapper{
+            height: 100vh; width: 800px; background: crimson; margin: auto;
+        }
+        header{
+            height: 100px; background: lightgreen;
+        }
+        nav{
+            height: 50px; background: cyan;
+        }
+        .outer{
+            height: calc(100% - 360px); background: pink;
+            display: flex; justify-content: space-between;
+        }
+        footer{
+            height: 50px; background: yellow;
+        }
+        .mb{
+            margin-bottom: 20px;
+        }
+        main{
+            width: calc(10%-340px); background: lightgray;
+        }
+        aside {
+            width: 150px; background: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="mb"></header>
+        <nav class="mb"></nav>
+        <div class="outer mb">
+            <aside></aside>
+            <main></main>
+            <aside></aside>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
