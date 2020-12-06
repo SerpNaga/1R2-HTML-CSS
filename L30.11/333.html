@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <style>
 body {
     margin: 0;
 }
 .item {
-    background: lightskyblue;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(6, 100px);
-    grid-template-rows: 100px 300px 100px 300px;
+    grid-template-rows: 50px 350px 100px 350px;
     gap: 20px;
     padding: 50px calc(50% - 350px);
+    color: #f7b5c0;
+}
+h1 {
+    color: #ad6874;
+}
+h2 {
+    color: #ad6874;
+}
+h3 {
+    color: #ad6874;
 }
 .item1 {
     grid-column-start: 1; 
@@ -42,20 +54,84 @@ body {
 }
 .bottom {
     grid-column-end: span 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.card1 {
+    padding: 25px;
+    justify-content: space-around;
+    align-items: start;
+}
+.card2Img {
+    height: 100%;
+    width: 100%;
+}
+.bottomCard {
+    height: 150px;
+}
+.buttons {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.bt {
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+}
+.bt1 {
+    background: #f7b5c0;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btbt{
+    margin-top: 20px;
 }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item item1"></div>
-        <div class="item item2"></div>
-        <div class="item item3"></div>
-        <div class="item card"></div>
-        <div class="item card"></div>
-        <div class="item break"></div>
-        <div class="item bottom"></div>
-        <div class="item bottom"></div>
-        <div class="item bottom"></div>
+        <div class="item item1"><a href=""><i class="fas fa-tint"></i>Whaa</a></div>
+        <div class="item item2">
+            <ul class="menu">
+                <li><a href="">No</a></li>
+                <li><a href="">What</a></li>
+                <li><a href="">Hi</a></li>
+                <li><a href="">Right</a></li>
+            </ul>
+        </div>
+        <div class="item item3"><div class="bt bt1"><a href="">SSuSS</a></div></div>
+        <div class="item card card1"><div>----- My Portfolio<h1>Hello, my name Ghaist Hatta<br>I'm a UI/UX Designer.</h1></div>
+            <div class="buttons">
+                <div class="bt bt1"><a href="">Button 1</a></div>
+                <div class="bt bt2"><a href="">Button 2</a></div>
+            </div>
+    </div>
+        <div class="item card card2">
+            <img class="card2Img" src="https://sun9-8.userapi.com/impg/5gb3gF2Ty4qwUVG_DV62DQh8tXU_gnnsTjZJxQ/Yv4H2Awy-N4.jpg?size=1064x1080&quality=96&proxy=1&sign=322245fc1372749f2626a552fe18ae43" alt="Art by cocobone VK">
+        </div>
+        <div class="item break">My specializing<h2>Explore. Think. Create.</h2></div>
+        <div class="item bottom"><img class="bottomCard" src="https://sun9-8.userapi.com/impg/5gb3gF2Ty4qwUVG_DV62DQh8tXU_gnnsTjZJxQ/Yv4H2Awy-N4.jpg?size=1064x1080&quality=96&proxy=1&sign=322245fc1372749f2626a552fe18ae43" alt="Art by cocobone VK"><h3>Web Design</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iusto.</div>
+        <div class="item bottom"><img class="bottomCard" src="https://sun9-8.userapi.com/impg/5gb3gF2Ty4qwUVG_DV62DQh8tXU_gnnsTjZJxQ/Yv4H2Awy-N4.jpg?size=1064x1080&quality=96&proxy=1&sign=322245fc1372749f2626a552fe18ae43" alt="Art by cocobone VK"><h3>UI/UX Design</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iusto.<div class="btbt bt bt1"><a href="">Button 3</a></div></div>
+        <div class="item bottom"><img class="bottomCard" src="https://sun9-8.userapi.com/impg/5gb3gF2Ty4qwUVG_DV62DQh8tXU_gnnsTjZJxQ/Yv4H2Awy-N4.jpg?size=1064x1080&quality=96&proxy=1&sign=322245fc1372749f2626a552fe18ae43" alt="Art by cocobone VK"><h3>Creative Designer</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iusto.</div>
     </div>
 </body>
 </html>
