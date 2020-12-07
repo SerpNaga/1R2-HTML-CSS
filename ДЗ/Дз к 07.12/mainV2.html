@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YESSSS</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 0;
+        }
+        .element {
+            background: white;
+            position: relative;
+            font: 12px sans-serif;
+        }
+        h2 {
+            font: bold small-caps 17px / 14px sans-serif;
+            margin: 0 0 8px 0;
+        }
+        h3 {
+            font: bold 9px / 7px sans-serif;
+            margin: 0 0 4px 0;
+        }
+        p {
+            font: 8px / 7px sans-serif;
+            margin: 0;
+        }
+        .element3 .el2 h2 {
+            margin-bottom: 6px;
+        }
+        .el {
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .number {
+            position: absolute;
+            background: gray;
+            height: 7px;
+            width: 10px;
+            top: 280px;
+            left: 180px;
+            font-size: 7px;
+            text-align: center;
+        }
+        .row {
+            position: absolute;
+            background: dimgray;
+            height: 60px;
+            width: 1px;
+            top: 20px;
+            left: 10px;
+        }
+        .container {
+            background: gray;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(2, 300px);
+            gap: 20px;
+            padding: 50px calc(50% - 430px)
+        }
+        .element1 {
+            padding: 20px;
+        }
+        .element1 .el1 {
+            height: 70px;
+            background: lightgray;
+        }
+        .element1 .el2 {
+            height: 40px;
+            background: dimgray;
+        }
+        .element1 .el3 {
+            height: 100px;
+        }
+        .element1 .el4 {
+            height: 40px;
+            background: lightgray;
+        }
+        .element2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 80px 30px 80px;
+            gap: 10px;
+            padding: 20px;
+        }
+        .element2 .el1 {
+            background: lightgray;
+            grid-column-end: span 3;
+        }
+        .element2 .el2 {
+            grid-column-end: span 3;
+        }
+        .element2 .el3 {
+            background: dimgray;
+        }
+        .element3 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            justify-content: space-around;
+        }
+        .element3 .el1 {
+            background: lightgray;
+            height: 160px;
+            padding: 15px 10px;
+        }
+        .element3 .el2 {
+            background: dimgray;
+            height: 60px;
+            color: white;
+            padding: 15px 10px;
+        }
+        .element4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 200px;
+        }
+        .element4 .el1 {
+            padding: 20px;
+        }
+        .element4 .el2 {
+            background: lightgray;
+        }
+        .element4 .el3 {
+            background: dimgray;
+        }
+        .element4 .el4 {
+            padding: 40px 10px;
+        }
+        .element5 {
+            padding: 10px;
+        }
+        .element5 .el1 {
+            height: 90px;
+            padding: 10px;
+        }
+        .element5 .el2 {
+            height: 120px;
+            background: dimgray;
+        }
+        .element5 .el3 {
+            height: 60px;
+            background: lightgray;
+            padding: 15px;
+        }
+        .element6 {
+            padding: 20px;
+        }
+        .element6 .el1 {
+            height: 60px;
+            background: lightgray
+        }
+        .element6 .el2 {
+            height: 90px;
+            padding: 20px 0;
+        }
+        .element6 .el3 {
+            height: 100px;
+            background: dimgray;
+        }
+        .element7 .el1 {
+            background: lightgrey;
+            height: 200px;
+            width: 150px;
+            padding: 20px;
+        }
+        .element7 .el2 {
+            height: 100px;
+            padding: 40px 20px;
+        }
+        .element7 .el3 {
+            background: dimgray;
+            height: 60px;
+            width: 130px;
+            position: absolute;
+            top: 160px;
+            left: 50px;
+            color: white;
+            padding: 15px 10px;
+        }
+        .element8 .el1 {
+            background: lightgray;
+            height: 90px;
+            padding: 20px;
+        }
+        .element8 .el2 {
+            height: 70px;
+            padding: 15px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element element1">
+            <div class="el el1">
+            <h2>app development<br>for companies</h2>
+            </div>
+            <div class="el el2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p></div>
+            <div class="el el3"></div>
+            <div class="el el4"></div>
+            <div class="number">11</div>
+            <div class="row"></div>
+        </div>
+        <div class="element element2">
+            <div class="el el1">
+            <h2>some design<br>facts</h2>
+            </div>
+            <div class="el el2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p></div>
+            <div class="el el3"></div>
+            <div class="el el3"></div>
+            <div class="el el3"></div>
+            <div class="number">12</div>
+            <div class="row"></div>
+        </div>
+        <div class="element element3">
+            <div class="el el1">
+            <h2>modern<br>design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p>
+            </div>
+            <div class="el el2">
+            <h2>nors</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="number">13</div>
+        </div>
+        <div class="element element4">
+            <div class="el el1">
+            <h2>new<br>one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3"></div>
+            <div class="el el4">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptates facilis delectus adipisci? Magnam, perferendis. Officia odit non delectus deserunt.</p>
+            </div>
+            <div class="number">14</div>
+            <div class="row"></div>
+        </div>
+        <div class="element element5">
+            <div class="el el1">
+            <h2>modern<br>design</h2>
+            <p><p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.</p></p>
+            </div>
+            <div class="el el2"></div>
+            <div class="el el3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p>
+            </div>
+            <div class="number">15</div>
+            <div class="row"></div>
+        </div>
+        <div class="element element6">
+            <div class="el el1">
+            <h2>clean<br>design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse.</p>
+            </div>
+            <div class="el el2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio, deleniti illum nesciunt, cum possimus omnis dicta aut dolore perspiciatis, quisquam doloribus quae sed totam numquam ex iusto tenetur deserunt.</p>
+            </div>
+            <div class="el el3"></div>
+            <div class="number">16</div>
+            <div class="row"></div>
+        </div>
+        <div class="element element7">
+            <div class="el el1">
+            <h2>one<br>work</h2>
+            </div>
+            <div class="el el2">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p></div>
+            <div class="el el3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse.</p></div>
+            <div class="number">17</div>
+        </div>
+        <div class="element element8">
+            <div class="el el1">
+            <h2>what we<br>do for you</h2>
+            </div>
+            <div class="el el2">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
+            </div>
+            <div class="el el2">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
+            </div>
+            <div class="el el2">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
+            </div>
+            <div class="number">18</div>
+        </div>
+    </div>
+</body>
+</html>

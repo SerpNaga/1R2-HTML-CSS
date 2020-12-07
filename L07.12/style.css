@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background: peachpuff;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner {
+    height: 500px;
+    background-image: url(https://i.arts.in.ua/i/667/f_persikovyy-sad_shchesnyak_viktor_1337353143.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 40px 0 10px;
+}
+.element {
+    width: 270px;
+    height: 270px;
+    background: palevioletred;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2);
+    font: 100px sans-serif;
+    line-height: 270px;
+    text-align: center;
+    color: peachpuff;
+    margin: 0 0 30px 0;
+}
+@media print {
+    .wrap {
+        width: 100%;
+    }
+    body {
+        background: transparent;
+    }
+    .banner {
+        filter: grayscale(75%);
+    }
+    .element {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        box-shadow: none;
+        background: white;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
+@media (min-width:120px) and (max-width: 900px) {
+    body {
+        background: powderblue;
+    }
+    .wrap {
+        padding: 0 20px;
+        width: auto;
+    }
+}
