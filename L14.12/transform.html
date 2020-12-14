@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <style>
+        body {
+            margin: 0;
+        }
+        .outer {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .inner {
+            height: 400px;
+            width: 400px;
+            border: 1px salmon solid;
+            border-radius: 10%;
+            font-size: 350px;
+            color: darksalmon;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dynamic {
+            background: salmon;
+            transform-style: preserve-3d;
+            animation: moveCube 3s linear infinite;
+            /* transform: rotate(45deg) translate(50px, 50px); */
+            /*transform: skew(-50deg, 25deg) scale(2, -1)*/
+        }
+        /* .dynamic i {
+            transition-duration: 5s;
+            transition-delay: 1000ms;
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(1,1.78,.88,.79);
+        }
+        .dynamic i:hover {
+            transform: rotate(-45deg) scale(1.1);
+            text-shadow: 1px 2px 1px #000;
+            color: rosybrown;
+        }
+        */
+        .inner {
+            background: none;
+            font-size: 0;
+            border: none;
+        }
+        .side {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .top {
+            background: rgba(139, 69, 19, 0.4);
+            transform: translateY(-50%) rotateX(90deg);
+        }
+        .bottom {
+            background: rgba(105, 105, 105, 0.4);
+            transform: translateY(50%) rotateX(90deg);
+        }
+        .left {
+            background: rgba(76, 0, 130, 0.4);
+            transform: translateX(-50%) rotateY(90deg);
+        }
+        .right {
+            background: rgba(34, 139, 34, 0.4);
+            transform: translateX(50%) rotateY(90deg);
+        }
+        .front {
+            background: rgba(218, 165, 32, 0.4);
+            transform: translateZ(50%);
+        }
+        .back {
+            background: rgba(32, 178, 171, 0.4);
+            transform: translateZ(-50%);
+        }
+
+        @keyframes moveCube {
+            100% {
+                transform: rotate3d(1,1,1, 360deg);
+            }
+        }
+
+        /*
+        .dynamic:hover {
+            transform: rotate(45deg) rotate3d(3,3,3, 360deg);
+            transition: transform 3s linear;
+        }
+        */
+        /*
+        .dynamic i:hover {
+            transform: scale(1.05);
+            text-shadow: 1px 2px 10px rgba(70, 40, 35, 0.2);
+        }
+        .dynamic i:active {
+            transform: scale(1);
+            filter: brightness(0.9);
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner static"></div>
+        <div class="inner dynamic">
+            <i class="fas fa-arrow-circle-up">
+                <div class="side top"></div>
+                <div class="side bottom"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side front"></div>
+                <div class="side bottom"></div>
+            </i></div>
+    </div>
+</body>
+</html>
