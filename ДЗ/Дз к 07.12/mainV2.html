@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YESSSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <style>
         body {
             margin: 0;
             font-size: 0;
+            color: rgb(20, 20, 20);
         }
         .element {
             background: white;
@@ -19,15 +21,26 @@
             margin: 0 0 8px 0;
         }
         h3 {
-            font: bold 9px / 7px sans-serif;
+            font: bold 7px / 7px sans-serif;
             margin: 0 0 4px 0;
         }
         p {
-            font: 8px / 7px sans-serif;
-            margin: 0;
+            font: 7px / 7px sans-serif;
+            margin: 0 0 8px 0;
+        }
+        i {
+            margin-bottom: 6px;
+            font-size: 10px;
+        }
+        img {
+            height: 10px;
         }
         .element3 .el2 h2 {
             margin-bottom: 6px;
+        }
+        .element2 i {
+            margin-bottom: 6px;
+            font-size: 15px;
         }
         .el {
             box-sizing: border-box;
@@ -36,7 +49,6 @@
         }
         .number {
             position: absolute;
-            background: gray;
             height: 7px;
             width: 10px;
             top: 280px;
@@ -53,7 +65,7 @@
             left: 10px;
         }
         .container {
-            background: gray;
+            background: lightgray;
             display: grid;
             grid-template-columns: repeat(4, 200px);
             grid-template-rows: repeat(2, 300px);
@@ -65,35 +77,41 @@
         }
         .element1 .el1 {
             height: 70px;
-            background: lightgray;
         }
         .element1 .el2 {
             height: 40px;
-            background: dimgray;
         }
         .element1 .el3 {
             height: 100px;
+            background-image: url(https://shop.ee.co.uk/content/dam/everything-everywhere/images/SHOP/affiliates/apple/Watch_S5_40mm_Gold+PinkBand_affilliates_800x800.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
         .element1 .el4 {
             height: 40px;
             background: lightgray;
+            padding: 0 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
         .element2 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 80px 30px 80px;
+            grid-template-rows: 70px 30px 80px;
             gap: 10px;
             padding: 20px;
         }
         .element2 .el1 {
-            background: lightgray;
             grid-column-end: span 3;
         }
         .element2 .el2 {
             grid-column-end: span 3;
         }
         .element2 .el3 {
-            background: dimgray;
+            text-align: center;
         }
         .element3 {
             display: flex;
@@ -102,12 +120,15 @@
             justify-content: space-around;
         }
         .element3 .el1 {
-            background: lightgray;
+            background-image: url(https://image.freepik.com/free-vector/dark-grey-texture_1100-158.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
             height: 160px;
-            padding: 15px 10px;
+            padding: 15px 60px 0 10px ;
         }
         .element3 .el2 {
-            background: dimgray;
+            background: rgb(20, 20, 20);
             height: 60px;
             color: white;
             padding: 15px 10px;
@@ -121,10 +142,16 @@
             padding: 20px;
         }
         .element4 .el2 {
-            background: lightgray;
+            background-image: url(https://previews.123rf.com/images/1stchoice/1stchoice1707/1stchoice170700082/83015128-soft-pink-grey-background-texture-in-pale-watercolor-abstract-pastel-morning-sky.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
         }
         .element4 .el3 {
-            background: dimgray;
+            background-image: url(https://previews.123rf.com/images/1stchoice/1stchoice1707/1stchoice170700051/82864335-grey-wall-texture-light-grunge-background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
         }
         .element4 .el4 {
             padding: 40px 10px;
@@ -138,11 +165,14 @@
         }
         .element5 .el2 {
             height: 120px;
-            background: dimgray;
+            background-color: lightgray;
+            background-image: url(https://infinitediaries.net/wp-content/uploads/2018/07/MacBook-Pro-mid-2018-front-02.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
         .element5 .el3 {
             height: 60px;
-            background: lightgray;
             padding: 15px;
         }
         .element6 {
@@ -150,7 +180,6 @@
         }
         .element6 .el1 {
             height: 60px;
-            background: lightgray
         }
         .element6 .el2 {
             height: 90px;
@@ -158,17 +187,24 @@
         }
         .element6 .el3 {
             height: 100px;
-            background: dimgray;
+            background: lightgray;
+            background-image: url(https://www.att.com/idpassets/global/devices/phones/apple/iphone-11/carousel/black/iPhone_11_Black_carousel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
         .element7 .el1 {
-            background: lightgrey;
+            background-image: url(https://image.freepik.com/free-vector/dark-grey-texture_1100-158.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
             height: 200px;
             width: 150px;
             padding: 20px;
         }
         .element7 .el2 {
             height: 100px;
-            padding: 40px 20px;
+            padding: 35px 20px;
         }
         .element7 .el3 {
             background: dimgray;
@@ -181,12 +217,15 @@
             padding: 15px 10px;
         }
         .element8 .el1 {
-            background: lightgray;
+            background-image: url(https://previews.123rf.com/images/1stchoice/1stchoice1707/1stchoice170700082/83015128-soft-pink-grey-background-texture-in-pale-watercolor-abstract-pastel-morning-sky.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
             height: 90px;
             padding: 20px;
         }
         .element8 .el2 {
-            height: 70px;
+            height: 60px;
             padding: 15px 20px 0;
         }
     </style>
@@ -199,7 +238,10 @@
             </div>
             <div class="el el2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p></div>
             <div class="el el3"></div>
-            <div class="el el4"></div>
+            <div class="el el4">
+                <i class="far fa-folder"></i>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Square%2C_Inc._-_Square_logo.svg/1024px-Square%2C_Inc._-_Square_logo.svg.png" alt="square logo"> 
+            </div>
             <div class="number">11</div>
             <div class="row"></div>
         </div>
@@ -208,16 +250,31 @@
             <h2>some design<br>facts</h2>
             </div>
             <div class="el el2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p></div>
-            <div class="el el3"></div>
-            <div class="el el3"></div>
-            <div class="el el3"></div>
+            <div class="el el3">
+                <i class="far fa-folder"></i>
+                <p>7777+</p>
+                <h3>hihihihihi</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="el el3">
+                <i class="far fa-folder"></i>
+                <p>7777+</p>
+                <h3>hihihihihi</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="el el3">
+                <i class="far fa-folder"></i>
+                <p>7777+</p>
+                <h3>hihihihihi</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
             <div class="number">12</div>
             <div class="row"></div>
         </div>
         <div class="element element3">
             <div class="el el1">
             <h2>modern<br>design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse. Ratione facilis perspiciatis fugiat molestiae?</p>
             </div>
@@ -283,14 +340,17 @@
             <h2>what we<br>do for you</h2>
             </div>
             <div class="el el2">
+                <i class="far fa-folder"></i>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
             </div>
             <div class="el el2">
+                <i class="far fa-folder"></i>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
             </div>
             <div class="el el2">
+                <i class="far fa-folder"></i>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, ducimus.</p>
             </div>
