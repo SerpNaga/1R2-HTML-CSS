@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-columns: repeat(50px, 1fr);
+            padding: 10px 0;
+        }
+        .logo {
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-top: 50px solid salmon;
+            border-left-width: 25px;
+            border-right-width: 25px;
+            animation: rotateT 5s linear infinite;
+            transform-origin: 25px 20px;
+        }
+        .soc {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;align-items: center;
+            justify-content: flex-end;
+        }
+        .link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid salmon;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        @keyframes rotateT{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav class="soc">
+            <li><a class="link" href="">Vk</a></li>
+            <li><a class="link" href="">Vk</a></li>
+            <li><a class="link" href="">Vk</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum!</h1>
+        <section>
+            <h2>Section1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat odio at ipsa iusto totam. Itaque, eos. Voluptate nulla possimus, nihil tempore itaque voluptatem libero laboriosam veritatis ab explicabo numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat odio at ipsa iusto totam. Itaque, eos. Voluptate nulla possimus, nihil tempore itaque voluptatem libero laboriosam veritatis ab explicabo numquam.</p>
+        </section>
+        <details>
+            <summary>Helloooo</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut aut totam. Maxime, temporibus nesciunt odio, corrupti omnis quas labore sapiente pariatur vitae ipsa soluta natus porro quis incidunt architecto!</p>
+            <p>Aperiam iusto, voluptatem odit alias harum, mollitia nostrum repellendus enim eum necessitatibus maxime. Officiis earum, expedita tenetur quo modi enim, iure explicabo laboriosam eum aspernatur hic ea accusamus corrupti quia.</p>
+        </details>
+        <figure>
+            <img src="../../../LLB/CH-ALL.jpg" height="200" alt="bbb">
+            <figcaption>Image</figcaption>
+        </figure>
+        <section>
+            <h2>Section2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat odio at ipsa iusto totam. Itaque, eos. Voluptate nulla possimus, nihil tempore itaque voluptatem libero laboriosam veritatis ab explicabo numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat odio at ipsa iusto totam. Itaque, eos. Voluptate nulla possimus, nihil tempore itaque voluptatem libero laboriosam veritatis ab explicabo numquam.</p>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus inventore recusandae illo, iste neque saepe, consequatur corporis aut repudiandae autem possimus quam. Possimus ea, quaerat, expedita ducimus non eos at vitae ullam dignissimos soluta maxime molestias labore sit officia impedit placeat laborum fugit debitis? Error maiores quis laudantium modi!</p>
+        <p>Nesciunt ullam doloremque incidunt atque libero debitis sint maxime rem sunt at nam esse perspiciatis ea est neque cum quo, aspernatur quam fuga. Quis perspiciatis minus, temporibus dignissimos optio voluptatibus sit dicta quibusdam cum dolores! Voluptas quod, debitis quis reprehenderit blanditiis facere, officia voluptates quo id consectetur excepturi et iure?</p>
+
+    </main>
+    <footer>
+        <nav class="soc" style="justify-content: center; padding: 20px 0;">
+            <li><a class="link" href="">Vk</a></li>
+            <li><a class="link" href="">Vk</a></li>
+            <li><a class="link" href="">Vk</a></li>
+        </nav>
+    </footer>
+</body>
+</html>
