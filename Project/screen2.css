@@ -4,16 +4,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
+
 p {
     padding: 0;
     margin: 0;
 }
-.screen1 {
-    height: 100vh;
-    background: plum;
-}
 .screen2 {
-    height: 720vh;
     background: red;
     display: flex;
     flex-direction: column;

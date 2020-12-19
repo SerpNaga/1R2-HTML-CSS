@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background: palegreen;
-    width: 100vw;
+    background: peachpuff;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -10,6 +11,7 @@ a {
 }
 details summary{
     outline: none;
+    text-align: center;
 }
 
 
@@ -19,7 +21,9 @@ details summary{
     width: 100vw;
     background: crimson;
 }
-
+.invisible {
+    height: 50px;
+}
 
 header {
     position: fixed;
@@ -53,8 +57,9 @@ header {
     position: relative;
 }
 details {
-    padding: 0 5px;
+    padding: 0 10px;
     background: crimson;
+    width: 9em;
 }
 details summary::-webkit-details-marker {
     font-size: 0;
@@ -66,7 +71,7 @@ details[open] .marker{
 }
 .characters {
     margin-left: 0;
-    padding: 10px 20px 0.4em;
+    padding: 1em 20px 0.6em;
     list-style: none;
 }
 .characters li::before {
@@ -74,4 +79,5 @@ details[open] .marker{
     color: blue;
     display: inline-block;
     width: 0.8em;
-    margin-left: -1em}
+    margin-left: -1em
+}

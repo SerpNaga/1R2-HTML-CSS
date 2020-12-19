@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: peachpuff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer {
+    height: 30vh;
+    background: gray;
+}
+footer p {
+    height: 20vh;
+    background: chartreuse;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.bottom {
+    height: 10vh;
+    padding: 15px 50px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: cyan;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.links{
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    width: 20vw;
+}
