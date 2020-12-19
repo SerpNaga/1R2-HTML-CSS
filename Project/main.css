@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: peachpuff;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.screen1 {
+    height: 100vh;
+    background: plum;
+}
+.screen2 {
+    height: 720vh;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+}
+.screen2 .small{
+    height: 45vh;
+}
+.screen2 .medium {
+    height: 41vh;
+}
+.screen2 .big{
+    height: 37vh;
+}
+.charPage {
+    height: 60vh;
+    background: darkblue;
+}
+.charTitle {
+    height: 7vh;
+    background:darkolivegreen;
+    padding: 0 22vw;
+    font: bold 4.5vh / 7vh sans-serif;
+}
+.charCard {
+    height: 53vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 12vw;
+}
+.charBG {
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    background: #3b3b3b;
+    border-radius: 50%;
+    z-index: 0;
+    top: calc(50% - 25vh/2);
+    left: 12vw;
+}
+.charImg img{
+    position: relative;
+    z-index: 1;
+}
+.charTxt {
+    width: 65%;
+    min-width: 420px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.ver2 .charTitle {
+    text-align: right;
+}
+.ver2 .charCard {
+    flex-direction: row-reverse;
+}
+.reverse {
+    transform: scale(-1, 1);
+}
+.ver2 .charBG {
+    left: unset;
+    right: 12vw;
+}
+
+.sonata {
+    right: 3vw;
+}
+.doombox {
+    left: 7vw;
+}
+.nitro {
+    right: 2vw;
+}
+.dust {
+    left: 4vw;
+}

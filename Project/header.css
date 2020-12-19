@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background: palegreen;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+details summary{
+    outline: none;
+}
+
+
+.headerBack {
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background: crimson;
+}
+
+
+header {
+    position: fixed;
+    height: 100vh;
+    width: calc(100% - 100px);
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+}
+.navEl, .links{
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    width: 10vw;
+}
+.marker {
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+    display: inline-block;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(135deg);
+    position: relative;
+}
+details {
+    padding: 0 5px;
+    background: crimson;
+}
+details summary::-webkit-details-marker {
+    font-size: 0;
+    position: absolute;
+}
+details[open] .marker{
+    transform: rotate(-45deg);
+    top: 3px;
+}
+.characters {
+    margin-left: 0;
+    padding: 10px 20px 0.4em;
+    list-style: none;
+}
+.characters li::before {
+    content: "•"; 
+    color: blue;
+    display: inline-block;
+    width: 0.8em;
+    margin-left: -1em}
