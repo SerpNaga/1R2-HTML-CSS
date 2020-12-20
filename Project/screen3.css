@@ -3,7 +3,7 @@ body {
     background: peachpuff;
     display: flex;
     flex-direction: column;
-    color: bisque;
+    color: white;
 }
 
 
@@ -12,7 +12,7 @@ body {
 .screen3 {
     height: 74vh;
     min-width: 800px;
-    background: maroon;
+    background: rgb(30, 23, 30);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -24,13 +24,12 @@ body {
 }
 .getTitle {
     height: 16vh;
-    background: mediumblue;
     box-sizing: border-box;
     padding: 12vh 2vw 0;
 }
 form {
     height: 40vh;
-    background: rgba(20, 20, 20, 0.5);
+    background: rgba(85, 0, 85, 0.5);
     padding: 2vh 2vw;
     border-radius: 8px;
     display: flex;
@@ -38,17 +37,23 @@ form {
     justify-content: space-between;
     align-items: flex-start;
 }
-input {
+input, textarea {
     border-radius: 8px;
     border: none;
     outline: none;
 }
 .getName {
     width: 30vw;
+    height: 3vh;
+    box-sizing: border-box;
+    padding: 2%;
 }
 .getCom {
     width: 35vw;
     height: 20vh;
+    resize: none;
+    padding: 2%;
+    box-sizing: border-box;
 }
 .getSub{
     align-self: flex-end;

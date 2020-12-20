@@ -3,7 +3,49 @@ body {
     background: peachpuff;
     display: flex;
     flex-direction: column;
-    color: bisque;
+    color: rgb(240, 240, 240);
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+header {
+    font-size: 17px;
+}
+.title {
+    font-size: 2.5vw;
+    font-weight: 550;
+}
+.mainCard {
+    font: 2.5vh / 3vh sans-serif;
+}
+.charTxt {
+    font: 16px / 24px sans-serif;
+}
+.mainCard p {
+    margin-left: 10px;
+}
+.left {
+    width: 20px;
+    height: 1px;
+}
+.getTitle {
+    font: 4.5vh sans-serif;
+}
+form {
+    font: 14px / 18px sans-serif;
+}
+form input {
+    font-size: 14px;
+}
+form textarea {
+    font-size: 14px;
+}
+.bar {
+    font-size: 2vh;
 }
 
 
@@ -20,20 +62,20 @@ details summary{
 }
 .headerBack {
     position: fixed;
-    height: 50px;
+    height: 60px;
     width: 100vw;
-    background: crimson;
+    background: rgba(22, 15, 22);
     z-index: 998;
 }
 .invisible {
-    height: 50px;
+    height: 60px;
 }
 header {
     position: fixed;
     z-index: 999;
-    height: 100vh;
+    min-height: 50px;
     width: calc(100% - 100px);
-    padding: 15px 50px;
+    padding: 0 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,27 +84,36 @@ header {
 .navEl, .links{
     margin: 0;
     padding: 0;
-    width: 30vw;
+    width: 40vw;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
+header .links, .navEl {
+    margin-top: 20px;
+}
+header i {
+    font-size: 3vh;
+}
 .links {
-    width: 10vw;
+    width: 12vw;
+}
+.navEl {
+    min-width: 460px;
 }
 .marker {
     width: 5px;
     height: 5px;
     margin: 3px;
     display: inline-block;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
     transform: rotate(135deg);
     position: relative;
 }
 details {
     padding: 0 10px;
-    background: crimson;
+    background: rgba(22, 15, 22);
     width: 9em;
 }
 details summary::-webkit-details-marker {
@@ -80,11 +131,15 @@ details[open] .marker{
 }
 .characters li::before {
     content: "•"; 
-    color: blue;
+    color: rgb(230, 230, 230);
     display: inline-block;
     width: 0.8em;
     margin-left: -1em
 }
+header .logo {
+    height: 60px;
+}
+
 
 
 
@@ -92,14 +147,15 @@ details[open] .marker{
 
 .screen1 {
     position: relative;
-    height: 200vh;
+    height: 150vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(transparent, rgba(128, 128, 128, 0.2), rgba(105, 0, 105, 0.5));
 }
 .screen1 .a {
-    height: 50%;
+    height: 100vh;
     width: 100%;
     background-image: url(../LLB/BG-MAIN.png);
     background-size: cover;
@@ -107,27 +163,38 @@ details[open] .marker{
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    z-index: -2;
+    z-index: -1;
 }
 .screen1 .b {
-    height: 50%;
+    height: 50vh;
     width: 100%;
-    background:tomato;
+    background-image: url(../LLB/BG3.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: repeat-y;
     position: absolute;
     bottom: 0;
     z-index: -2;
 }
 .title {
-    width: 45vw;
-    height: 15vh;
-    background: chocolate;
-    margin-top: 55vh;
+    width: 40vw;
+    height: 12vh;
+    background: rgba(22, 15, 22, 0.95);
+    border-radius: 8px;
+    margin-top: 50vh;
+    text-align: center;
+    line-height: 12vh;
 }
 .mainCard {
-    width: 65vw;
-    height: 100vh;
-    background: cornflowerblue;
-    margin-top: 15vh;
+    width: 55vw;
+    min-width: 100vh;
+    height: 65vh;
+    background: rgba(22, 15, 22, 0.95);
+    border-radius: 8px;
+    margin-top: 10vh;
+    box-sizing: border-box;
+    padding: 2%;
+
 }
 
 
@@ -155,11 +222,15 @@ p {
 }
 .charPage {
     height: 60vh;
-    background: darkblue;
+    background: url(../LLB/BG3.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: repeat-y;
 }
 .charTitle {
     height: 7vh;
-    background:darkolivegreen;
+    background: rgb(20, 0, 25);
+    border-top: 1px solid rgb(230, 230, 230);
     padding: 0 26vw;
     font: bold 4.5vh / 7vh sans-serif;
 }
@@ -171,13 +242,15 @@ p {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    background: linear-gradient(rgba(85, 0, 85, 0.5), rgba(128, 128, 128, 0.2));
     padding: 0 14vw;
 }
 .charBG {
     position: absolute;
     width: 30vh;
     height: 30vh;
-    background: #3b3b3b;
+    background: rgb(40, 35, 40);
+    box-shadow: black 3px 4px;
     border-radius: 50%;
     z-index: 0;
     top: calc(50% - 25vh/2);
@@ -191,12 +264,14 @@ p {
     width: 65%;
     min-width: 420px;
     height: 150px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(22, 15, 22, 0.85);
+    border-radius: 8px;
     box-sizing: border-box;
     padding: 3%;
     display: flex;
     align-items: center;
 }
+
 .ver2 .charTitle {
     text-align: right;
 }
@@ -210,6 +285,7 @@ p {
     left: unset;
     right: 14vw;
 }
+
 .sonata {
     right: 3vw;
 }
@@ -228,9 +304,10 @@ p {
 
 
 .screen3 {
-    height: 74vh;
+    height: 76vh;
     min-width: 800px;
-    background: maroon;
+    background: rgb(30, 23, 30);
+    border-top: 1px solid rgb(230, 230, 230);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -241,14 +318,13 @@ p {
     margin-left: 1vw;
 }
 .getTitle {
-    height: 16vh;
-    background: mediumblue;
+    height: 17vh;
     box-sizing: border-box;
-    padding: 12vh 2vw 0;
+    padding: 6vh 1.5vw 0;
 }
 form {
     height: 40vh;
-    background: rgba(20, 20, 20, 0.5);
+    background: rgba(85, 0, 85, 0.5);
     padding: 2vh 2vw;
     border-radius: 8px;
     display: flex;
@@ -256,17 +332,23 @@ form {
     justify-content: space-between;
     align-items: flex-start;
 }
-input {
+input, textarea {
     border-radius: 8px;
     border: none;
     outline: none;
 }
 .getName {
     width: 30vw;
+    height: 3vh;
+    box-sizing: border-box;
+    padding: 2%;
 }
 .getCom {
     width: 35vw;
-    height: 20vh;
+    height: 18vh;
+    resize: none;
+    padding: 2%;
+    box-sizing: border-box;
 }
 .getSub{
     align-self: flex-end;
@@ -277,7 +359,7 @@ input {
     position: relative;
     width: calc(45vh / 665 * 1101);
     height: 45vh;
-    margin-top: 16vh;
+    margin-top: 17vh;
     background-image: url(../LLB/allChars2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -291,7 +373,7 @@ input {
     position: absolute;
     width: 38vh;
     height: 36vh;
-    background: linear-gradient( #696969,#696969,#696969,#696969, transparent, transparent);
+    background: linear-gradient(#696969, #696969,#696969,#282328,transparent, transparent);
     border-radius: 50%;
     z-index: 0;
     top: calc(50% - 20vh/2);
@@ -304,27 +386,49 @@ input {
 
 footer {
     height: 45vh;
-    background: gray;
-    color: black;
+    background: rgb(40, 35, 40);
+    border-top: 1px solid rgb(230, 230, 230);
 }
 footer p {
     height: 25vh;
-    background: chartreuse;
     text-align: center;
     line-height: 25vh;
 }
+footer .links {
+    width: 15vw;
+}
 .bottom {
     height: 10vh;
-    padding: 15px 50px;
-    border-top: 1px solid #000;
+    padding: 0 5vw;
+    border-top: 1px solid rgb(230, 230, 230);
     box-sizing: border-box;
     font-size: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: cyan;
+    align-items: center;
 }
 .bar {
     height: 10vh;
-    background: black;
+    background: rgb(22, 15, 22);
+    text-align: center;
+    line-height: 10vh;
+}
+footer .logo {
+    height: 8.5vh;
+    border-top: 1px solid rgb(47, 42, 47);
+    border-left: 1px solid rgb(47, 42, 47);
+    border-right: 1px solid rgb(22, 15, 22);
+    border-bottom: 1px solid rgb(22, 15, 22);
+}
+
+
+
+
+
+.getSub:hover, a:hover, summary:hover {
+    filter: drop-shadow( rgb(150, 150, 150) 1px 1px 3px);
+}
+.getSub:active, a:active, summary:active {
+    filter: brightness(0.5);
 }

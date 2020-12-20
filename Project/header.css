@@ -3,7 +3,7 @@ body {
     background: peachpuff;
     display: flex;
     flex-direction: column;
-    color: bisque;
+    color: white;
 }
 
 a {
@@ -20,7 +20,7 @@ details summary{
     position: fixed;
     height: 60px;
     width: 100vw;
-    background: crimson;
+    background: rgba(22, 15, 22);
     z-index: 998;
 }
 .invisible {
@@ -30,7 +30,7 @@ details summary{
 header {
     position: fixed;
     z-index: 999;
-    height: 100vh;
+    min-height: 50px;
     width: calc(100% - 100px);
     padding: 20px 50px;
     display: flex;
@@ -46,22 +46,25 @@ header {
     display: flex;
     justify-content: space-between;
 }
+header i {
+    font-size: 3vh;
+}
 .links {
-    width: 10vw;
+    width: 12vw;
 }
 .marker {
     width: 5px;
     height: 5px;
     margin: 3px;
     display: inline-block;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+    border-top: 1px solid bisque;
+    border-right: 1px solid bisque;
     transform: rotate(135deg);
     position: relative;
 }
 details {
-    padding: 0 10px;
-    background: crimson;
+    padding: 0 10px;   
+    background: rgba(22, 15, 22);
     width: 9em;
 }
 details summary::-webkit-details-marker {

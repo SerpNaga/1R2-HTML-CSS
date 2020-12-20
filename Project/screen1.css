@@ -3,21 +3,25 @@ body {
     background: peachpuff;
     display: flex;
     flex-direction: column;
-    color: bisque;
+    color: white;
 }
 
 
-
+h1 {
+    margin: 0;
+    padding: 0;
+}
 .screen1 {
     position: relative;
-    height: 200vh;
+    height: 155vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(transparent, rgba(128, 128, 128, 0.2), rgba(105, 0, 105, 0.5));
 }
 .screen1 .a {
-    height: 50%;
+    height: 100vh;
     width: 100%;
     background-image: url(../LLB/BG-MAIN.png);
     background-size: cover;
@@ -28,26 +32,33 @@ body {
     z-index: -2;
 }
 .screen1 .b {
-    height: 50%;
+    height: 55vh;
     width: 100%;
-    background:tomato;
+    background-image: url(../LLB/BG3.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: repeat-y;
     position: absolute;
     bottom: 0;
     z-index: -2;
 }
-
-
 .title {
     width: 45vw;
     height: 15vh;
-    background: chocolate;
+    background: rgba(22, 15, 22, 0.97);
+    border-radius: 8px;
     margin-top: 55vh;
+    text-align: center;
+    line-height: 15vh;
 }
 .mainCard {
     width: 65vw;
-    height: 100vh;
-    background: cornflowerblue;
-    margin-top: 15vh;
+    height: 60vh;
+    background: rgba(22, 15, 22, 0.97);
+    border-radius: 8px;
+    margin-top: 10vh;
+    box-sizing: border-box;
+    padding: 2%;
 }
 
 
