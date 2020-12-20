@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid #000;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <tbody>
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+            <th>Header4</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Block 1</td>
+            <td>Block 2</td>
+            <td>Block 3</td>
+        </tr>
+        <tr>
+            <td>Block 4</td>
+            <td>Block 5</td>
+            <td>Block 6</td>
+            <td>Block 7</td>
+        </tr>
+        <tr>
+            <td><div class="box"></div></td>
+            <td>Block 8</td>
+            <td colspan="2">Block 9</td>
+        </tr>
+    </tbody>
+    </table>
+    <table class="tbl">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td colspan="2" rowspan="2">22-23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>42</td>
+            <td>43</td>
+            <td>44</td>
+        </tr>
+    </table>
+</body>
+</html>

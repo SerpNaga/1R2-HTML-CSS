@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            border: solid darkgreen;
+        }
+        textarea{
+            resize:none
+        }
+    </style>
+</head>
+<body>
+    <h1>Order sushi!</h1>
+    <form action="" method="GET">
+        Name:<input type="text" name="UserName"><br>
+        Address:<input type="text" name="UserAdress"><br>
+        Choose a city:<select name="city">
+            <option>Moscow</option>
+            <option>New York</option>
+            <option>Paris</option>
+            <option>Hong Kong</option>
+        </select><br>
+        Phone number:<input type="text" name="UserPhone"><br>
+        E-mail adress:<input type="text" name="UserMail"><br>
+        <fieldset>
+        <legend>Pay method:</legend>
+        <input type="radio" name="pay" value="Нал" checked> Нал<br>
+        <input type="radio" name="pay" value="Карта"> Карта<br>
+        </fieldset>
+        <fieldset>
+        <legend>WHAS</legend>
+        <label><input type="radio" name="bonus" value="B1"> Bonus 1</label>
+        <label><input type="radio" name="bonus" value="B2"> Bonus 2</label>
+        <label><input type="radio" name="bonus" value="B3"> Bonus 3<br></label>
+        </fieldset>
+        <fieldset>
+        <legend>Choose:</legend>
+        <input type="checkbox" name="dish" value="Dish1"> Dish 1<br>
+        <input type="checkbox" name="dish" value="Dish2"> Dish 2<br>
+        <input type="checkbox" name="dish" value="Dish3"> Dish 3<br>
+        </fieldset>
+        <input type="submit" value="Order"><br>
+        <textarea name="text" placeholder="TEXT HERE"></textarea>
+        <!-- 
+        cols - кол-во символов в ширину
+        rows - кол-во символов в высоту
+        -->
+    </form>
+</body>
+</html>
