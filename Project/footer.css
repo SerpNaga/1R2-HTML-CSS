@@ -7,15 +7,18 @@ body {
 
 
 
+
+
 footer {
-    height: 30vh;
+    height: 45vh;
     background: gray;
+    color: black;
 }
 footer p {
-    height: 20vh;
+    height: 25vh;
     background: chartreuse;
     text-align: center;
-    line-height: 20vh;
+    line-height: 25vh;
 }
 
 .bottom {
@@ -28,6 +31,10 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     background: cyan;
+}
+.bar {
+    height: 10vh;
+    background: black;
 }
 
 

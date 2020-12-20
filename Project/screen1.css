@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background: peachpuff;
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+}
+
+
+
+.screen1 {
+    position: relative;
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.screen1 .a {
+    height: 50%;
+    width: 100%;
+    background-image: url(../LLB/BG-MAIN.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.screen1 .b {
+    height: 50%;
+    width: 100%;
+    background:tomato;
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+}
+
+
+.title {
+    width: 45vw;
+    height: 15vh;
+    background: chocolate;
+    margin-top: 55vh;
+}
+.mainCard {
+    width: 65vw;
+    height: 100vh;
+    background: cornflowerblue;
+    margin-top: 15vh;
+}
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    padding: 0;
+    margin: 0;
+}

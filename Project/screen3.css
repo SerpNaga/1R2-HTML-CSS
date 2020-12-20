@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background: peachpuff;
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+}
+
+
+
+
+.screen3 {
+    height: 74vh;
+    min-width: 800px;
+    background: maroon;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 7vh;
+}
+.screen3 p {
+    margin-left: 1vw;
+}
+.getTitle {
+    height: 16vh;
+    background: mediumblue;
+    box-sizing: border-box;
+    padding: 12vh 2vw 0;
+}
+form {
+    height: 40vh;
+    background: rgba(20, 20, 20, 0.5);
+    padding: 2vh 2vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+input {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.getName {
+    width: 30vw;
+}
+.getCom {
+    width: 35vw;
+    height: 20vh;
+}
+.getSub{
+    align-self: flex-end;
+    margin-right: 1vw;
+    padding: 3px 10px;
+}
+.allChars {
+    position: relative;
+    width: calc(45vh / 665 * 1101);
+    height: 45vh;
+    margin-top: 16vh;
+    background-image: url(../LLB/allChars2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position: bottom;
+}
+.img {
+    position: relative;
+}
+.imgBG {
+    position: absolute;
+    width: 38vh;
+    height: 36vh;
+    background: linear-gradient( #696969,#696969,#696969,#696969, transparent, transparent);
+    border-radius: 50%;
+    z-index: 0;
+    top: calc(50% - 20vh/2);
+    left: calc(50% - 39vh/2);
+}
+
+
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    padding: 0;
+    margin: 0;
+}

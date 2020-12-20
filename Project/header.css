@@ -3,6 +3,7 @@ body {
     background: peachpuff;
     display: flex;
     flex-direction: column;
+    color: bisque;
 }
 
 a {
@@ -17,19 +18,21 @@ details summary{
 
 .headerBack {
     position: fixed;
-    height: 50px;
+    height: 60px;
     width: 100vw;
     background: crimson;
+    z-index: 998;
 }
 .invisible {
-    height: 50px;
+    height: 60px;
 }
 
 header {
     position: fixed;
+    z-index: 999;
     height: 100vh;
     width: calc(100% - 100px);
-    padding: 15px 50px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
